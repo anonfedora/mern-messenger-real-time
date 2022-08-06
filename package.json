@@ -1,0 +1,38 @@
+{
+  "name": "messenger",
+  "version": "1.0.0",
+  "description": "",
+  "main": "backend/server.js",
+  "scripts": {
+    "server": "nodemon server.js",
+    "start": "node server.js",
+    "client": "npm start --prefix frontend",
+    "socket": "npm start --prefix socket",
+    "dev": "concurrently \"npm run server\" \"npm run client\"  \"npm run socket\"",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false && npm install --prefix frontend && npm run build --prefix frontend && npm install --prefix socket"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.20.0",
+    "concurrently": "^7.2.2",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "formidable": "^2.0.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongodb": "^4.7.0",
+    "mongoose": "^6.4.0",
+    "nodemailer": "^6.7.7",
+    "validator": "^13.7.0"
+  },
+  "devDependencies": {
+    "@types/formidable": "^2.0.5",
+    "nodemon": "^2.0.16"
+  }
+}
