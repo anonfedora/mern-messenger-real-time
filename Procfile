@@ -1,1 +1,1 @@
-web:node backend/server.js -port 8000
+web:node ./server.js -port 8000
