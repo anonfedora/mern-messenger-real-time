@@ -29,9 +29,9 @@ app.get('/', (req,res)=>{
 })
 
 // All other GET requests not handled before will return our React app
-app.get('*', (req, res) => {
-    res.sendFile(path.resolve(__dirname, '../frontend/build', 'index.html'));
-  });
+// app.get('*', (req, res) => {
+//     res.sendFile(path.resolve(__dirname, '../frontend/build', 'index.html'));
+//   });
 databaseConnect();
 
 app.listen(PORT, ()=>{
