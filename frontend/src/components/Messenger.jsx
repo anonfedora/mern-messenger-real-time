@@ -55,13 +55,6 @@ const Messenger = () => {
     themeMode,
   } = useSelector((state) => state.messenger);
 
-  console.log(
-    friends,
-    message,
-    messageSendSuccess,
-    message_get_success,
-    themeMode
-  );
   const { myInfo } = useSelector((state) => state.auth);
   const dispatch = useDispatch();
 

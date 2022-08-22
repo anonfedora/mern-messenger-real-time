@@ -2,14 +2,14 @@
   "name": "messenger",
   "version": "1.0.0",
   "description": "",
-  "main": "backend/server.js",
+  "main": "server.js",
   "scripts": {
     "server": "nodemon server.js",
     "start": "node server.js",
     "client": "npm start --prefix frontend",
     "socket": "npm start --prefix socket",
     "dev": "concurrently \"npm run server\" \"npm run client\"  \"npm run socket\"",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false && npm install --prefix frontend && npm run build --prefix frontend && npm install --prefix socket"
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false && npm install --prefix frontend && npm run build --prefix frontend && npm install --prefix socket && npm install"
   },
   "keywords": [],
   "author": "",
