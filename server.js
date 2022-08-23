@@ -22,9 +22,9 @@ app.use("/api/messenger", authRouter);
 app.use("/api/messenger", getFriends);
 
 const PORT = process.env.PORT || 5000;
-app.get("/", (req, res) => {
-  res.send("This is from frontend");
-});
+// app.get("/", (req, res) => {
+//   res.send("This is from frontend");
+// });
 
 app.use(express.static(path.join(__dirname, "./frontend/build")));
 // All other GET requests not handled before will return our React app
